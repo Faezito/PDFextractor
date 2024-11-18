@@ -1,4 +1,5 @@
-#Extrator de PDF
+# Extrator de PDF
+
 Para usar, basta selecionar o tipo de informação que deseja extrair do arquivo PDF, e depois o arquivo PDF em si, o programa fará o resto sozinho.
 Será necessário baixar a versão executável do programa para utilizá-lo.
 
