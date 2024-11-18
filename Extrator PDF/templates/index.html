@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de PDF</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+                <h1>Extrair do PDF</h1>
+                <p>Extraia dados desejados de um arquivo PDF.</p>
+                <form action="/processar" method="POST" enctype="multipart/form-data">
+                    <label for="pdf" class="btn-file">Selecionar arquivo PDF</label> <br>
+                    <input type="file" name="pdf" id="pdf" required>
+                    <p>{{filename}}</p>
+                    <br><br>
+
+                    <label for="tipo">O que deseja extrair?</label><br>
+                    <select name="tipo" id="tipo">
+                        <option value="Email">Email</option>
+                        <option value="Telefone">Telefone</option>
+                    </select>
+                    <br><br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+    </div>      
+</body>
+<footer>
+    <p>Desenvolvido e atualizado por Matheus Faé</p> 
+
+</footer>
+</html>
