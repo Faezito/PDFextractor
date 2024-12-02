@@ -1,0 +1,124 @@
+* {margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+:root {
+    --dark: rgb(58, 58, 58);
+    --mid: rgb(209, 209, 209);
+    --light: rgb(243, 243, 243);
+    --redl: rgb(173, 28, 28);
+    --redd: rgb(117, 20, 20);
+    --bluel: rgb(34, 101, 177);
+    --blued: rgb(20, 64, 114);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+head {
+}
+
+nav {
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: var(--mid);
+    box-shadow: 0 -5px 10px var(--mid);
+}
+
+    footer a {
+        right: 30px;
+        position: absolute;
+        color: var(--blued);
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+        footer a:hover {
+            text-shadow: 0 0 20px var(--dark);
+            color: var(--light);
+        }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    height: 100%;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    line-height: 2em;
+    text-align: center;
+}
+    .container h1 {
+        margin: 30px 0;
+        font-size: 3em;
+        line-height: 1.2em;
+    }
+    .container p {
+        margin: 20px 0;
+    }
+    .container input[type="file"] {
+        display: none;
+    }
+    .container select{
+        padding: 5px 15px;
+        border-radius: 10px;
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+    .container button{
+        padding: 15px 30px;
+        font-size: 1.5em;
+        border-radius: 20px;
+        background-color: var(--bluel);
+        color: var(--light);
+        text-transform: uppercase;
+        border: none;
+    }
+        .container button:hover {
+            background-color: var(--blued);
+        }
+
+.btn-file {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--bluel);
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--light);
+}
+    .btn-file:hover{
+        background-color: var(--blued);
+    }
+
+a{
+    text-decoration: none;
+}
+
+#reset{
+        padding: 7px 15px;
+        font-size: 1em;
+        border-radius: 10px;
+        background-color: var(--redd);
+        color: var(--light);
+        text-transform: uppercase;
+        border: none;
+        margin: 10px;
+}
+    #reset:hover {
+        background-color: var(--blued);
+    } 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de PDF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Extrator de PDF</h1>
+        <p>Extraia dados desejados de um arquivo PDF. <br>
+        Basta selecionar o tipo de dado que deseja extrair do arquivo PDF, enviar o arquivo através do botão azul e pronto!
+        </p>
+
+        <h3>O que deseja extrair?</h3>
+
+        <form id="select">
+                <input type="radio" id="email" name="type" value="Email">
+                <label for="email">Email</label>
+                <input type="radio" name="type" id="tel" value="Tel"> 
+                <label for="tel">Telefone</label>
+        </form>
+        <br>
+            <label for="pdfInput" class="btn-file">Selecione o Arquivo</label>
+            <input type="file" name="pdf" id="pdfInput" accept=".pdf" required>
+            <a href="/">
+                <button id="reset">Reiniciar</button>
+            </a>
+            <br><br>
+
+            <label for="output" id="output">Seu resultado será exibido aqui</label><br>
+
+            <br><br>
+</div>      
+<script src="pdf.js"></script>
+</body>
+<footer>
+<p>Desenvolvido e atualizado por Matheus Faé</p>        
+<a href="https://faestudy.w3spaces.com/">Ver mais</a>
+</footer>
+
+
+    
+</body>
+</html>
